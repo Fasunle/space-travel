@@ -38,3 +38,15 @@ textarea,
 select {
   font: inherit;
 }
+
+/*------------------ remove animations for people who have turned them off ----------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
