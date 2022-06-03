@@ -30,3 +30,11 @@ body {
   min-height: 100vh;
   line-height: 1.5;
 }
+
+/*------------------ make form element easir to work with ----------------- */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
