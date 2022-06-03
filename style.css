@@ -16,6 +16,11 @@
   --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
+
+  /* font-family */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow ", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
 }
 
 /* ------------------------- */
