@@ -50,3 +50,36 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ------------------------- */
+/*  Utility Classes          */
+/*-------------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  margin-inline: auto; /* This center the container */
+  max-width: 80rem;
+  padding-inline: 2em;
+}
+
+/* screen-read-only (sr-only) */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
