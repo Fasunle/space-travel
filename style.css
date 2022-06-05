@@ -338,6 +338,7 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
   aspect-ratio: 1;
   border: 0;
   border-radius: 50%;
+  cursor: pointer;
   display: grid;
   place-items: center;
 }
