@@ -312,3 +312,19 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
 .tab-list {
   --gap: 2em;
 }
+
+.dot-indicators > * {
+  aspect-ratio: 1;
+  background-color: hsl(var(--clr-light) / 0.25);
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.dot-indicators > *:hover,
+.dot-indicators > *:focus {
+  background-color: hsl(var(--clr-light) / 0.5);
+}
+
+.dot-indicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-light) / 1);
+}
