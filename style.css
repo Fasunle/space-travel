@@ -293,7 +293,8 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
   padding: var(--underline-gap) 0;
 }
 
-.underline-indicators > *:hover {
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
   border-color: hsl(var(--clr-light) / 0.5);
 }
 
