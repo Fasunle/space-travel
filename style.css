@@ -118,6 +118,23 @@ select {
   max-width: 80rem;
   padding-inline: 2em;
 }
+
+.grid-container {
+  display: grid;
+  column-gap: var(--container-gap, 2em);
+  grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
+      2rem,
+      1fr
+    );
+}
+
+.grid-container > *:first-child {
+  grid-column: 2;
+}
+
+.grid-container > *:last-child {
+  grid-column: 3;
+}
 /* :where is used to reduce specificity. 
 
 this could also be used. It has specificity of (0, 2, 0) whereas the other has (0, 1, 0)
