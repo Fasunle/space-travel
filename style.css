@@ -351,6 +351,7 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
   aspect-ratio: 1;
   background-color: transparent;
   background-image: url(./assets/shared/icon-hamburger.svg);
+  background-position: center center;
   background-repeat: no-repeat;
   border: 0;
   display: none;
@@ -363,6 +364,8 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
 
 .primary-header [aria-expanded="true"] {
   background-image: url(./assets//shared/icon-close.svg);
+  outline: 2px solid white;
+  outline-offset: 5px;
 }
 
 @supports (backdrop-filter: blur(2rem)) {

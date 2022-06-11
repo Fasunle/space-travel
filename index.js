@@ -15,5 +15,4 @@ menu_toggle.addEventListener("click", () => {
   } else {
     navigation.setAttribute("data-visible", false);
   }
-  console.log(expanded);
 });
