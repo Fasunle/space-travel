@@ -346,6 +346,10 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
   padding: 0;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 @supports (backdrop-filter: blur(2rem)) {
   .primary-navigation {
     background-color: hsl(var(--clr-white) / 0.02);
@@ -369,6 +373,10 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
 
   .primary-navigation.underline-indicators > .active {
     border: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
   }
 }
 
