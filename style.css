@@ -339,11 +339,29 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
 }
 
 .primary-navigation {
-  --gap: 8rem;
   --underline-gap: 2em;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 35rem) {
+  .primary-navigation {
+    --underline-gap: 0.5em;
+    position: fixed;
+    z-index: 999;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(20rem, 15vh) 2rem;
+  }
+
+  .numbered-title {
+    font-size: var(--fs-400, 1rem);
+  }
+
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
 }
 
 .primary-navigation a {
