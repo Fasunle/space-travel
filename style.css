@@ -95,6 +95,7 @@ body {
   font-size: var(--fs-400);
   min-height: 100vh;
   line-height: 1.5;
+  overflow: hidden;
 }
 
 /*------------------ make form element easir to work with ----------------- */
