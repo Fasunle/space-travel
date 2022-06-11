@@ -95,7 +95,7 @@ body {
   font-size: var(--fs-400);
   min-height: 100vh;
   line-height: 1.5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /*------------------ make form element easir to work with ----------------- */
@@ -338,7 +338,10 @@ this could also be used. It has specificity of (0, 2, 0) whereas the other has (
   opacity: 1;
   transform: scale(1.5);
 }
-
+/* NAVIGATION */
+.logo {
+  margin: 1.5rem clamp(1.5rem, 4.5vw + 1rem, 3.5rem);
+}
 .primary-navigation {
   --underline-gap: 2em;
   background-color: hsl(var(--clr-dark) / 0.95);
